@@ -1,0 +1,126 @@
+
+/* CSS precedence: inline > ID > class > tag > universal */
+
+/* Universal selector */
+* {
+    box-sizing: border-box;
+}
+
+/* Basic tag selectors */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #4b2e2e;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Banner using an ID selector */
+#banner {
+    background: linear-gradient(to right, #f6b26b, #fce5cd);
+    text-align: center;
+    padding: 40px;
+    color: #663300;
+}
+
+/* Shared class selector */
+.intro,
+.card {
+    background-color: white;
+    color: #4b2e2e;
+}
+
+/* Highlighted text */
+.highlight {
+    color: #d35400;
+    font-weight: bold;
+}
+
+/* Service cards container */
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Service cards */
+.card {
+    width: 30%;
+    height: 220px;
+    background-color: #ffe6cc;
+    color: #663300;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: #d98841;
+    border-radius: 12px;
+
+    padding: 20px;
+    margin: 10px;
+
+    /* Padding is inside the border; margin is outside it. */
+    flex: 1;
+
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Featured card gets more space */
+.featured {
+    flex: 2;
+    background-color: #ffd699;
+}
+
+/* Example of a positioned label */
+.featured::before {
+    content: "Popular";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #c0392b;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+}
+
+/* Price styling */
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(180, 70, 30);
+}
+
+/* Hover effect */
+.card:hover {
+    background-color: #f5cba7;
+    transform: translateY(-5px);
+}
+
+/* Fixed call button */
+.contact-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    background-color: #8e4b10;
+    color: white;
+    text-decoration: none;
+
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #c56b1a;
+}
+
