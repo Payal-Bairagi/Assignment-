@@ -1,0 +1,209 @@
+
+/* CSS precedence: inline > ID > class > tag > universal */
+
+/* Universal selector */
+* {
+    box-sizing: border-box;
+}
+
+/* Basic tag selectors */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #4b2e2e;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Banner using an ID selector */
+#banner {
+    background: linear-gradient(to right, #f6b26b, #fce5cd);
+    text-align: center;
+    padding: 40px;
+    color: #663300;
+}
+
+/* Shared class selector */
+.intro,
+.card {
+    background-color: white;
+    color: #4b2e2e;
+}
+
+/* Highlighted text */
+.highlight {
+    color: #d35400;
+    font-weight: bold;
+}
+
+/* Service cards container */
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Service cards */
+.card {
+    width: 30%;
+    height: 220px;
+    background-color: #ffe6cc;
+    color: #663300;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: #d98841;
+    border-radius: 12px;
+
+    padding: 20px;
+    margin: 10px;
+
+    /* Padding is inside the border; margin is outside it. */
+    flex: 1;
+
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Featured card gets more space */
+.featured {
+    flex: 2;
+    background-color: #ffd699;
+}
+
+/* Example of a positioned label */
+.featured::before {
+    content: "Popular";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #c0392b;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+}
+
+/* Price styling */
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(180, 70, 30);
+}
+
+/* Hover effect */
+.card:hover {
+    background-color: #f5cba7;
+    transform: translateY(-5px);
+}
+
+/* Fixed call button */
+.contact-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    background-color: #8e4b10;
+    color: white;
+    text-decoration: none;
+
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #c56b1a;
+}
+
+/* Question 3: Order Calculator styling */
+
+#order-section {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #fff8ee;
+    color: #3e2723;
+    border: 2px solid #a47148;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+#order-section h2,
+#order-section h3 {
+    text-align: center;
+}
+
+#order-section label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#order-section input,
+#order-section select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #a47148;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#order-section button {
+    margin-top: 12px;
+    padding: 10px 16px;
+    background-color: #6f4e37;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#order-section button:hover {
+    background-color: #4e342e;
+}
+
+#order-section button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+#orderList li {
+    margin: 12px 0;
+}
+
+#orderList button {
+    margin-left: 10px;
+    background-color: #b23b3b;
+}
+
+.error-span {
+    color: red;
+}
+
+.offer-banner {
+    margin: 15px 0;
+    padding: 12px;
+    background-color: #ffe0a3;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+#bill {
+    line-height: 1.8;
+    white-space: pre-line;
+}
+
+#orderMessage {
+    font-weight: bold;
+    margin-top: 15px;
+}
