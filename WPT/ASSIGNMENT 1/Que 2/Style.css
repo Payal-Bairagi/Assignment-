@@ -1,0 +1,71 @@
+
+/* Basic page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #9face6);
+}
+
+/* Navigation bar */
+nav {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+nav a:hover {
+    color: #74ebd5;
+    transition: 0.3s;
+}
+
+/* Login card */
+.login-card {
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    border-radius: 12px;
+    text-align: center;
+    margin: 50px auto;
+    padding: 25px;
+}
+
+/* Input fields: class selector */
+.login-input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: none;
+    border-bottom: 2px solid #888;
+    outline: none;
+}
+
+/* Login button: ID selector */
+#login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a69bd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#login-button:hover {
+    background-color: #1e3799;
+}
+
+.login-card a {
+    color: #4a69bd;
+    text-decoration: none;
+}
