@@ -1,0 +1,335 @@
+
+/* General Page Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: #243b55;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h2 {
+    margin: 0;
+}
+
+/* Navigation */
+#main-nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#main-nav a:hover {
+    color: #ffd166;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 45px 20px;
+    background-color: #e3ecf7;
+}
+
+.hero h1 {
+    color: #243b55;
+    font-size: 36px;
+}
+
+.hero img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #243b55;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #3d648c;
+}
+
+/* Welcome Box */
+.welcome-box {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-box h2 {
+    color: #243b55;
+}
+
+input,
+textarea,
+select {
+    font: inherit;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin: 5px;
+    max-width: 100%;
+}
+
+/* Buttons */
+button {
+    background-color: #2878b5;
+    color: white;
+    padding: 10px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #185785;
+}
+
+/* Middle Section */
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+}
+
+.subscribe,
+.about {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 280px;
+    max-width: 500px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.subscribe h3,
+.about h3 {
+    color: #243b55;
+}
+
+.about span {
+    color: #2878b5;
+    font-weight: bold;
+}
+
+/* Cards Section */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 25px 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 250px;
+    max-width: 350px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #243b55;
+    border-bottom: 2px solid #2878b5;
+    padding-bottom: 8px;
+}
+
+.card li {
+    margin-bottom: 8px;
+}
+
+/* GitHub Repositories */
+.github-section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.github-section h2 {
+    color: #243b55;
+}
+
+#repoList li {
+    padding: 8px;
+    border-bottom: 1px solid #eeeeee;
+    overflow-wrap: anywhere;
+}
+
+#repoMessage {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Projects Page */
+.projects-container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-cards article {
+    flex: 1 1 250px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.project-cards span {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #e2e8f0;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.projects-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+}
+
+.projects-container th,
+.projects-container td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.projects-container th {
+    background-color: #e3ecf7;
+}
+
+/* Contact Page */
+.contact-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    margin: 0 0 10px;
+}
+
+.error-span {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+#thankYouMessage {
+    color: green;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #main-nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .middle,
+    .cards {
+        padding: 15px;
+    }
+
+    .welcome-box,
+    .github-section,
+    .contact-container {
+        margin: 20px 12px;
+        padding: 18px;
+    }
+
+    .projects-container {
+        padding: 10px;
+    }
+}

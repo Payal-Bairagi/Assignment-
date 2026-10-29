@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h2>My Portfolio</h2>
+
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Hello, I'm Payal!</h1>
+
+        <img src="C:\Users\care system\OneDrive\Desktop\Assignment 1\payal.png"
+     alt="Payal's Profile Photo"
+     width="200"
+     height="200">
+        <p>I am a beginner web developer learning HTML and CSS.</p>
+
+        <a href="projects.html" class="btn">View My Projects</a>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome-box">
+        <h2>Welcome to My Portfolio</h2>
+
+        <label for="visitorName">Enter your name:</label>
+        <input type="text" id="visitorName" placeholder="Your name">
+
+        <button type="button" onclick="showWelcome()">
+            Welcome Me
+        </button>
+
+        <h3 id="welcomeMessage">Hello, visitor!</h3>
+    </section>
+
+    <!-- Middle Section -->
+    <section class="middle">
+
+        <div class="subscribe">
+            <h3>Subscribe</h3>
+
+            <form action="#" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email">
+
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="about" id="about">
+            <h3>About Me</h3>
+
+            <p>
+                I am a student interested in technology and web development.
+                My goal is to become a
+                <span>skilled web developer</span>.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Cards Section -->
+    <section class="cards">
+
+        <div class="card">
+            <h3>Education</h3>
+
+            <ol>
+                <li>School Education</li>
+                <li>Higher Secondary Education</li>
+                <li>Current Course</li>
+            </ol>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="card">
+            <h3>Skills</h3>
+
+            <button type="button" onclick="toggleTheme()">
+                Dark mode
+            </button>
+
+            <button type="button" onclick="toggleSkills()">
+                Hide
+            </button>
+
+            <ul id="skillsList">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Communication</li>
+                <li>Teamwork</li>
+                <li>Problem Solving</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Projects</h3>
+
+            <p>My first website</p>
+            <p>Personal portfolio</p>
+
+            <a href="projects.html">See Projects</a>
+        </div>
+
+    </section>
+
+    <!-- GitHub Repositories Section -->
+    <section class="github-section">
+        <h2>My GitHub Repositories</h2>
+
+        <button type="button" onclick="loadRepositories()">
+            Load Repositories
+        </button>
+
+        <p id="repoMessage"></p>
+        <ul id="repoList"></ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 My Portfolio</p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="js/home.js"></script>
+
+</body>
+</html>
