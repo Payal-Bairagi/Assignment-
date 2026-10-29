@@ -1,0 +1,234 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333333;
+}
+
+/* Header */
+header {
+    background-color: #17365d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px;
+    font-size: 28px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #2c5282;
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    color: #17365d;
+    text-align: center;
+}
+
+main p {
+    line-height: 1.6;
+}
+
+/* Login and form pages */
+.form-container {
+    max-width: 500px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #1769aa;
+    box-shadow: 0 0 4px rgba(23, 105, 170, 0.3);
+}
+
+/* Password field and Show button */
+.password-row {
+    display: flex;
+    align-items: stretch;
+    gap: 8px;
+}
+
+.password-row input {
+    flex: 1;
+    min-width: 0;
+}
+
+.password-row button {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+/* Buttons */
+button {
+    background-color: #1769aa;
+    color: white;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #104d80;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Validation errors */
+.error-span {
+    display: block;
+    color: red;
+    font-size: 13px;
+    margin-top: 3px;
+    margin-bottom: 8px;
+}
+
+/* Messages */
+#loginMessage,
+#directoryMessage,
+#onboardingMessage {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Employee directory table */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #17365d;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f5f7fa;
+}
+
+/* Employee search */
+.search-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.search-row label {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.search-row input,
+.search-row select {
+    margin: 0;
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    main {
+        margin: 15px;
+        padding: 18px;
+    }
+
+    .search-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .password-row {
+        gap: 5px;
+    }
+
+    .password-row button {
+        padding: 10px;
+    }
+}
